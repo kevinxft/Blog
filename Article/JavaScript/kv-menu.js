@@ -15,6 +15,11 @@
     'use strict';
 
     console.log('kv-menu is run');
+    const blue = '#247BA0;'
+    const green = '#70C1B3'
+    const li_green = '#B2DBBF'
+    const yellow = '#F3FFBD'
+    const red = '#FF1654'
 
     GM_addStyle(`
     #k-menu{ z-index:999999;
