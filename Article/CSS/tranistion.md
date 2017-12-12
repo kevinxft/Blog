@@ -50,6 +50,13 @@ transition属性只是一个简写，用于设置四个过度属性：
 }
 ```
 ## 形状变化
+```css
+/* 左上角 */
+transform-origin: 0% 0%;
+/* 左下角 */
+transform-origin:0% 100%;
+
+```
 
 ```html
 
