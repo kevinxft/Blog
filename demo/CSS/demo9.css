@@ -1,0 +1,173 @@
+/* 颜色块表换 */
+
+/* 当前元素设置相对定位 */
+.each-fade,
+.each-fade-t,
+.each-fade-b,
+.each-fade-l,
+.each-fade-r,
+.each-fade-c-in,
+.each-fade-m-in,
+.each-fade-m-out,
+.each-fade-c-out,
+.each-bounce-t,
+.each-bounce-b,
+.each-bounce-r,
+.each-bounce-l {
+  position: relative;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+/*当前元素的:before和:after设置绝对定位*/
+.each-fade:before,
+.each-fade-t:before,
+.each-fade-b:before,
+.each-fade-l:before,
+.each-fade-r:before,
+.each-fade-c-in:before,
+.each-fade-m-in:before,
+.each-fade-m-out:before,
+.each-fade-c-in:after,
+.each-fade-m-in:after,
+.each-fade-c-out:before {
+  position: absolute;
+  transition: all 0.3s;
+  content: "";
+  display: block;
+  background: #09f;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+/*弹跳元素:before和:after设置绝对定位和运动曲线*/
+.each-bounce-t:before,
+.each-bounce-b:before,
+.each-bounce-r:before,
+.each-bounce-l:before {
+  transition: all 0.3s;
+  transition-timing-function: cubic-bezier(0.52, 1.7, 0.5, 0.4);
+  position: absolute;
+  content: "";
+  display: block;
+  background: #09f;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+/*背景颜色和文字变化*/
+.each-fade:before {
+    top: 0;
+    left: 0;
+    transform: scaleX(1);
+    opacity: 0;
+}
+
+.each-fade:hover:before {
+    opacity: 1;
+}
+
+/*颜色从左至右变化*/
+.each-fade-l:before, .each-bounce-l:before {
+    top: 0;
+    right: 0;
+    transform-origin: 0 50%;
+    transform: scaleX(0);
+}
+/*颜色从右至左变化*/
+.each-fade-r:before, .each-bounce-r:before {
+    top: 0;
+    left: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+}
+
+/*颜色从上往下变化*/
+.each-fade-t:before, .each-bounce-t:before {
+    bottom: 0;
+    left: 0;
+    transform-origin: 50% 0;
+    transform: scaleY(0);
+}
+/*颜色从下往上变化*/
+.each-fade-b:before, .each-bounce-b:before {
+    top: 0;
+    left: 0;
+    transform-origin: 50% 100%;
+    transform: scaleY(0);
+}
+
+/*颜色垂直居中出去*/
+.each-fade-m-out:before {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transform: scaleY(0);
+}
+
+/*水平居中出去*/
+.each-fade-c-out:before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transform: scaleX(0);
+}
+
+.each-fade-c-out:hover:before {
+    transform: scaleX(1);
+}
+
+/*水平居中进来*/
+.each-fade-c-in:before {
+    top: 0;
+    left: 0;
+    transform-origin: 0 50%;
+    transform: scaleX(0);
+}
+
+.each-fade-c-in:after {
+    top: 0;
+    right: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+}
+
+/*垂直居中进来*/
+.each-fade-m-in:before {
+    top: 0;
+    left: 0;
+    transform-origin: 50% 0;
+    transform: scaleY(0);
+}
+
+.each-fade-m-in:after {
+    bottom: 0;
+    left: 0;
+    transform-origin: 50% 100%;
+    transform: scaleY(0);
+}
+/*当前元素文字颜色变化*/
+.each-fade:hover, .each-fade-t:hover, .each-fade-b:hover, .each-fade-l:hover, .each-fade-r:hover, .each-fade-c-in:hover, .each-fade-m-in:hover, .each-fade-m-out:hover, .each-fade-c-out:hover, .each-bounce-t:hover, .each-bounce-b:hover, .each-bounce-r:hover, .each-bounce-l:hover {
+    color: #fff;
+}
+/*垂直方向进来的:before变化（一半）*/
+.each-fade-m-in:hover:before, .each-fade-m-in:hover:after {
+    transform: scaleY(.51);
+}
+/*垂直方向进来的:before变化*/
+.each-fade-t:hover:before, .each-fade-b:hover:before, .each-fade-m-out:hover:before, .each-bounce-b:hover:before, .each-bounce-t:hover:before {
+    transform: scaleY(1);
+}
+/*水平方向进来的:before变化（一半）*/
+.each-fade-c-in:hover:before, .each-fade-c-in:hover:after {
+    transform: scaleX(.51);
+}
+/*水平方向进来的:before变化*/
+.each-fade-l:hover:before, .each-fade-r:hover:before,.each-fade-c-out:hover:before, .each-bounce-l:hover:before, .each-bounce-r:hover:before {
+    transform: scaleX(1);
+}    

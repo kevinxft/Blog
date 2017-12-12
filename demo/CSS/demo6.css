@@ -1,0 +1,24 @@
+/* 阴影变化 */
+.each-shadow,
+.each-shadow-in,
+.each-shadow-write,
+.each-shadow-big {
+  transition: all 0.4s;
+}
+
+.each-shadow:hover {
+    box-shadow: 0 0 10px #333;
+}
+
+.each-shadow-in:hover {
+    box-shadow: inset 0 0 10px #333;
+}
+
+.each-shadow-write:hover {
+    box-shadow: inset 0 0 20px #fff;
+}
+
+.each-shadow-big:hover {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
+    transform: scale(1.1);
+}

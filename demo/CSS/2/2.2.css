@@ -1,0 +1,98 @@
+/* 颜色上下划线变化*/
+/*上划线和下划线变化 当前元素样式设置相对定位*/
+.each-overline-r, .each-overline-l, .each-underline-r, .each-underline-l, .each-underline-c, .each-overline-c, .each-underline-c-out, .each-overline-c-out{
+    position: relative;
+    transition: all .3s;
+    z-index: 1;
+}
+/*初始化:after:before大小和绝对定位*/
+.each-overline-r:before, .each-overline-l:before, .each-underline-l:before, .each-underline-r:before, .each-underline-c:before, .each-overline-c:before, .each-underline-c:after, .each-overline-c:after, .each-underline-c-out:before, .each-overline-c-out:before {
+    position: absolute;
+    transition: all .3s;
+    content: "";
+    display: block;
+    background: #09f;
+    z-index: -1;
+    height: 4px;
+    width: 100%;
+    transform: scaleX(0);
+}
+
+/*上划线 左右出来*/
+.each-overline-r:before {
+    top: 0;
+    left: 0;
+    transform-origin: 100% 50%;
+}
+
+.each-overline-l:before {
+    top: 0;
+    right: 0;
+    transform-origin: 0 50%;
+}
+
+/*下划线 左右出来*/
+.each-underline-r:before {
+    bottom: 0;
+    left: 0;
+    transform-origin: 100% 50%;
+
+}
+
+.each-underline-l:before {
+    bottom: 0;
+    right: 0;
+    transform-origin: 0% 50%;
+}
+
+/**上划线 下划线 居中进来**/
+.each-overline-c:before {
+    top: 0;
+    transform-origin: 0 50%;
+}
+
+.each-overline-c:after {
+    top: 0;
+    transform-origin: 100% 50%;
+}
+
+.each-underline-c:before {
+    bottom: 0;
+    transform-origin: 0 50%;
+}
+
+.each-underline-c:after {
+    bottom: 0;
+    transform-origin: 100% 50%;
+}
+
+.each-overline-c:before, .each-underline-c:before {
+    left: 0;
+}
+
+.each-overline-c:after, .each-underline-c:after {
+    right: 0;
+}
+
+/*上划线 下划线-居中出去 */
+.each-overline-c-out:before {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.each-underline-c-out:before {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/*hover效果*/
+.each-overline-c:hover:after, .each-overline-c:hover:before, .each-underline-c:hover:after, .each-underline-c:hover:before {
+    transform: scaleX(.51);
+}
+
+.each-overline-l:hover:before, .each-overline-r:hover:before, .each-underline-l:hover:before, .each-underline-r:hover:before, .each-underline-c-out:hover:before, .each-overline-c-out:hover:before {
+    transform: scaleX(1);
+}

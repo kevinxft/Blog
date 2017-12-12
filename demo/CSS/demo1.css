@@ -1,0 +1,14 @@
+
+
+.each-big,
+.each-small {
+    transition: all .4s;
+}
+
+.each-big:hover {
+    transform: scale(1.2)
+}
+
+.each-small:hover {
+    transform: scale(.9)
+}

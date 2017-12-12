@@ -1,0 +1,83 @@
+/* 旋转变化 */
+.each-grow-rotate-l,
+.each-grow-rotate-r,
+.each-rotate5,
+.each-rotate15,
+.each-rotate30,
+.each-rotate60,
+.each-rotate90,
+.each-rotate180,
+.each-rotate360,
+.each-rotate-5,
+.each-rotate-15,
+.each-rotate-30,
+.each-rotate-60,
+.each-rotate-90,
+.each-rotate-180,
+.each-rotate-360 {
+  transition: all 0.4s;
+}
+
+.each-grow-rotate-l:hover {
+  transform: scale(1.1) rotate(4deg);
+}
+
+.each-grow-rotate-r:hover {
+  transform: scale(1.1) rotate(-4deg);
+}
+
+.each-rotate-5:hover {
+  transform: rotate(-5deg);
+}
+
+.each-rotate-15:hover {
+  transform: rotate(-15deg);
+}
+
+.each-rotate-30:hover {
+  transform: rotate(-30deg);
+}
+
+.each-rotate-60:hover {
+  transform: rotate(-60deg);
+}
+
+.each-rotate-90:hover {
+  transform: rotate(-90deg);
+}
+
+.each-rotate-180:hover {
+  transform: rotate(-180deg);
+}
+
+.each-rotate-360:hover {
+  transform: rotate(-360deg);
+}
+
+.each-rotate5:hover {
+  transform: rotate(5deg);
+}
+
+.each-rotate15:hover {
+  transform: rotate(15deg);
+}
+
+.each-rotate30:hover {
+  transform: rotate(30deg);
+}
+
+.each-rotate60:hover {
+  transform: rotate(60deg);
+}
+
+.each-rotate90:hover {
+  transform: rotate(90deg);
+}
+
+.each-rotate180:hover {
+  transform: rotate(180deg);
+}
+
+.each-rotate360:hover {
+  transform: rotate(360deg);
+}

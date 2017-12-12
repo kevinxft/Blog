@@ -1,0 +1,40 @@
+.each-skew-l,
+.each-skew-r,
+.each-skew-l-t,
+.each-skew-r-b,
+.each-skew-l-b,
+.each-skew-r-t {
+    transition: all .4s;
+}
+
+.each-skew-r-t, .each-skew-l-t {
+    transform-origin: 0 100%;
+}
+
+.each-skew-r-b, .each-skew-l-b {
+    transform-origin: 100% 0;
+}
+
+.each-skew-l:hover {
+    transform: skew(-15deg);
+}
+
+.each-skew-r:hover {
+    transform: skew(15deg);
+}
+
+.each-skew-l-t:hover {
+    transform: skew(-15deg);
+}
+
+.each-skew-r-t:hover {
+    transform: skew(15deg);
+}
+
+.each-skew-l-b:hover {
+    transform: skew(15deg);
+}
+
+.each-skew-r-b:hover {
+    transform: skew(-15deg);
+}

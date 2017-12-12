@@ -1,0 +1,18 @@
+/* 圆角变化 */
+
+.each-radius,
+.each-rectangle {
+    transition: all .4s;
+}
+
+.each-radius {
+    border-radius: 10px;
+}
+
+.each-radius:hover {
+    border-radius: 0;
+}
+
+.each-rectangle:hover {
+    border-radius: 10px;
+}
