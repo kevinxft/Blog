@@ -9,7 +9,10 @@ import "./kevin.css"
 // import "./demo7.css";
 // import "./demo8.css";
 // import "./demo9.css";
-import "./2/2.2.css"
+// import "./2/2.2.css"
+// import "./2/2.2_.css"
+// import "./2/2.3.css";
+import "./2/2.3_.css";
 // import "./demo10.css";
 
 
@@ -126,12 +129,25 @@ function component(name, className) {
  * 颜色上下划线变化
  */
 
- document.body.appendChild(component('overline-l','each-overline-l'))
- document.body.appendChild(component('overline-r','each-overline-r'))
- document.body.appendChild(component('underline-l','each-underline-l'))
- document.body.appendChild(component('underline-r','each-underline-r'))
+//  document.body.appendChild(component('overline-l','each-overline-l'))
+//  document.body.appendChild(component('overline-r','each-overline-r'))
+//  document.body.appendChild(component('underline-l','each-underline-l'))
+//  document.body.appendChild(component('underline-r','each-underline-r'))
 
- document.body.appendChild(component('underline-c','each-underline-c'))
- document.body.appendChild(component('underline-c-out','each-underline-c-out'))
- document.body.appendChild(component('overline-c','each-overline-c'))
- document.body.appendChild(component('overline-c-out','each-overline-c-out'))
+//  document.body.appendChild(component('underline-c','each-underline-c'))
+//  document.body.appendChild(component('overline-c','each-overline-c'))
+//  document.body.appendChild(component('underline-c-out','each-underline-c-out'))
+//  document.body.appendChild(component('overline-c-out','each-overline-c-out'))
+
+/**
+ * 箭头动画
+ */
+ document.body.appendChild(component('arrow-l','each-arrow-l'))
+ document.body.appendChild(component('arrow-r','each-arrow-r'))
+ document.body.appendChild(component('arrow-t','each-arrow-t'))
+ document.body.appendChild(component('arrow-b','each-arrow-b'))
+
+ document.body.appendChild(component('arrow-l-move','each-arrow-l-move'))
+ document.body.appendChild(component('arrow-r-move','each-arrow-r-move'))
+ document.body.appendChild(component('arrow-t-move','each-arrow-t-move'))
+ document.body.appendChild(component('arrow-b-move','each-arrow-b-move'))
