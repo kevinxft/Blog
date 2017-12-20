@@ -3,11 +3,9 @@
 ## 目录
 - JavaScript学习笔记
 - CSS学习笔记
-- Node从零开始系列
-- React从零开始系列
-- React Native从零开始系列
-- Vue从零开始系列
-- Wepy(小程序)从零开始系列
+- Node学习笔记
+- React学习笔记
+- Wepy(小程序)学习笔记
 - Docker从零开始系列
 - Webpack从零开始系列
 - Tampermonkey(油猴脚本)从零开始系列
