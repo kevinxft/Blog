@@ -8,10 +8,6 @@
 - Wepy(小程序)学习笔记
 - Docker从零开始系列
 - Webpack从零开始系列
-- Tampermonkey(油猴脚本)从零开始系列
 
 ## 计划
-- [ ] 写一个tempermonkey的模板脚本
-- [ ] 利用新浪SAE的云应用来做简单的http服务器
-- [ ] 写一个小型商城
-- [ ] 写几个爬坑系列，纪录自己平时所学的东西，做一个回顾
+- 学习redux，写个一个hiit-web
