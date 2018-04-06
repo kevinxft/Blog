@@ -5,9 +5,10 @@
 - CSS学习笔记
 - Node学习笔记
 - React学习笔记
-- Wepy(小程序)学习笔记
+- vue学习笔记
 - Docker从零开始系列
 - Webpack从零开始系列
 
 ## 计划
-- 学习redux，写个一个hiit-web
+- JoJoGo(小程序，卖家版，买家版，koa后端)
+- hiit-app(计划直接用原生写)
