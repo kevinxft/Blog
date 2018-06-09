@@ -8,6 +8,7 @@
 - vue
 - Docker
 - Webpack
+- MongoDB
 
 ## 计划
 - JoJoGo(小程序，卖家版，买家版，koa后端)
